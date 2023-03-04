@@ -26,17 +26,34 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("load", navBehavior);
 
     function navBehavior() {
-        if (window.pageYOffset > 5) {
-            document.querySelector(".navbar").classList.add("active");
-        } else {
-            document.querySelector(".navbar").classList.remove("active");
-        }
+        /*
 
-        if (window.pageYOffset > 1000) {
-            document.querySelector("#scrollTop").classList.add("active");
-        } else {
-            document.querySelector("#scrollTop").classList.remove("active");
-        }
+        To fix the nav bar active behavior - modify the code below
+
+         */
+
+        //  if (window.scrollY > 1000) {
+        //     document.querySelector(".navbar").classList.add("active");
+        // } else {
+        //     document.querySelector(".navbar").classList.remove("active");
+        // }
+        //
+        // if (window.scrollY > 200) {
+        //     document.querySelector("#scrollTop").classList.add("active");
+        // } else {
+        //     document.querySelector("#scrollTop").classList.remove("active");
+        // }
+
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', function(event) {
+                const sectionId = link.getAttribute('href'); // Get section id from link href
+                document.querySelector('.active').classList.remove('active'); // Remove active class from current active section
+                document.querySelector(sectionId).classList.add('active'); // Add active class to new section
+                link.classList.add('active'); // Add active class to clicked link
+            });
+        });
+
+
     }
 
     /* =====================================
