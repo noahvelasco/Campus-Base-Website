@@ -35,16 +35,16 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #5954cb;
-  --bs-secondary: #6c757d;
+  --bs-primary: #FF5757;
+  --bs-secondary: #38B6FF;
   --bs-success: #28a745;
   --bs-info: #17a2b8;
   --bs-warning: #ffc107;
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #343a40;
-  --bs-primary-rgb: 89, 84, 203;
-  --bs-secondary-rgb: 108, 117, 125;
+  --bs-primary-rgb: 255, 87, 87;
+  --bs-secondary-rgb: 56, 182, 255;
   --bs-success-rgb: 40, 167, 69;
   --bs-info-rgb: 23, 162, 184;
   --bs-warning-rgb: 255, 193, 7;
@@ -10924,7 +10924,7 @@ section {
 }
 
 .footer-link:hover, .footer-link:focus {
-  color: #5954cb;
+  color: #FF5757;
   text-decoration: none;
 }
 
