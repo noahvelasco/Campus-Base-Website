@@ -622,10 +622,10 @@ progress {
 }
 
 .img-fluid {
-  max-width: 40rem;
+  max-width: 50vw;
   height: auto;
-  -webkit-filter: drop-shadow(5px 5px 5px #222);
-  filter: drop-shadow(5px 5px 5px #222);
+  -webkit-filter: drop-shadow(5px 5px 5px #000000);
+  filter: drop-shadow(5px 5px 5px #000000);
 }
 
 .img-thumbnail {
@@ -2954,8 +2954,8 @@ fieldset:disabled .btn {
 
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;
-  background-color: #4c47ad;
-  border-color: #4743a2;
+  background-color: #38B6FF;
+  border-color: #38B6FF;
   box-shadow: 0 0 0 0.25rem rgba(114, 110, 211, 0.5);
 }
 
